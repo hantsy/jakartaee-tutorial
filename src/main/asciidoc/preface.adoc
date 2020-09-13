@@ -7,7 +7,7 @@
 
 This documentation is part of the Java Enterprise Edition contribution 
 to the Eclipse Foundation and is not intended for use in relation to 
-Java Enterprise Edition or Orace GlassFish. The documentation is in the 
+Java Enterprise Edition or Oracle GlassFish. The documentation is in the 
 process of being revised to reflect the new Jakarta EE branding. 
 Additional changes will be made as requirements and procedures evolve 
 for Jakarta EE. Where applicable, references to Java EE or Java
@@ -73,9 +73,11 @@ Server, see
 `http://db.apache.org/derby/docs/10.14/adminguide/`.
 
 The GlassFish Samples project is a collection of sample applications
-that demonstrate a broad range of Jakarta EE technologies. The (Java EE 8) GlassFish
+that demonstrate a broad range of Jakarta EE technologies. The (Jakarta EE 8) GlassFish
 Samples are available from the GlassFish Samples project page at
-`https://javaee.github.io/glassfish-samples/`.
+`https://github.com/eclipse-ee4j/glassfish-samples`.
+
+The Sample Codes of this turotial is located at `https://github.com/eclipse-ee4j/jakartaee-tutorial-examples`.
 
 [[GKVTF]][[conventions]]
 
@@ -147,6 +149,9 @@ Windows, all installations:
 
 |`_tut-install_` |Represents the base installation directory for the Jakarta EE
 Tutorial after you download it. |`_as-install-parent_/docs/jakartaee-tutorial`
+
+|`_tut-examples_` |Represents the base installation directory for the example codes of  the Jakarta EE
+Tutorial after you download it. |`_tut-install_/examples`
 
 |`_domain-dir_` |Represents the directory in which a domain's configuration
 is stored. |`_as-install_/domains/domain1`
