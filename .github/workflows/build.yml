@@ -20,7 +20,15 @@ jobs:
       with:
         java-version: 1.8
     - name: Build Docs
-      run: mvn clean deploy --file pom.xml -Ppublish-site
+      run: mvn clean package --file pom.xml #-Ppublish-site 
+      
+    - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: target/generated-docs # The folder the action should deploy.
+          CLEAN: true # Automatically remove deleted files from the deploy br  
        
   automerge:
     name: Merge pull request
